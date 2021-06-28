@@ -1,0 +1,97 @@
+Heinrich@Hajnriś
+Heine@Hajne
+Bianca@Bjanka
+Cora@Kora
+Carolin@Karolin
+Ielyzaveta@Jelizavjeta
+deutsch@dojcz
+Pückler@pykla
+Schuster@szusta
+#
+# patterns.tts za serbski tts-system
+# Edward Wornar, 2020
+# komentarowe linki započinaja so z ´#´
+# datowe linki dźěla so do dwěju dźělow
+# syntaksa je <input>@<output>
+# <input> so naruna z <output>
+# <output> dyrbi so hodźeć za pólski tts!!!
+#
+# Kedźbu: Kóžda linka dyrbi pak jedne ´@´ měć abo so z ´#´ započeć!!
+#
+# To je za njeprawidłowne wurjekowanja (na př. pola mjenow), dźělenja atd.
+# prawidłowne wurazy so tež akceptuja
+[Ww]oteńd@wotejind
+[Ww]oteš@wotejš
+[Zz]ańd@zajin
+[Zz]aš@zajš
+[Zz]eńd@zejin
+[Zz]eš@zejš
+[Pp]řeńd@pszejin
+[Pp]řeš@pszejiš
+[Zz]em@zejm
+[Nn]jeboh@njebow
+#
+# porjad prawidłow je wažny!!! Wužiwa so jenož prěnje prawidło, kotrež so hodźi:
+# Přikład
+#
+# slědowace prawidła so wo akcent staraja
+#
+izowa@#izowa
+izuj@#izuj
+ěrowa@#ěrowa
+ěruj@#ěruj
+ěruj@#ěruj
+acij@#acij
+acis@#acis
+[Gg]ratul@gra#tul
+[Ss]tuden@stu#den
+[Kk]oleg@ko#liejg
+[Ii]institut@insti@tut
+[Kk]onferen@konfe#ren
+[Oo]organiza@organi#za
+[Ss]lawisti@sla#wisti
+[Pp]rotokol@proto#kol
+[Tt]ermin@ter#min
+HRK@ha-er-ka
+hrk@ha-er-ka
+#
+#
+# něšto mjenow
+#
+[Pp]etersburg@Pejtas burg
+Srjeznjews@Srezniefs
+Dostojews@Dostojefs
+Jason@Dziejzen
+#
+# kusk připadneho chaosa, skrótšenki
+# potajkim snano tež wěcy, kiž bychu poprawom druhdźe słušeli (jenož hdźe?)
+#
+--@, do
+[Kk]nj\.@knieni
+[Tt]uchwil@tukwil
+[Pp]řichod@psiśod
+[Zz]amórs@zamors-
+[Bb]ěh@biej
+[Ll]ěha@lieja
+[Rr]jenje@rejnje
+[Nn]eutr@nojtr
+eur@ojr
+EUR@ojro
+[Oo]nline@onlajn
+[Mm]eeting@mijting
+[Cc]harakt@ka#rakt
+[Pp]paragraf@para#graf
+#
+# kedźbu na backslash w přichodnym přikładźe
+#
+\$@dolar
+#
+# němske słowa, kiž su so připadnje w našich testowych datajach jewili
+#
+teilnehmen@tajlnej-men
+Wp@Wutrobny postrow
+Lp@Luby postrow
+[Nn]ein@najn
+#
+# kónc dataje
+#
