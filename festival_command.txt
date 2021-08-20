@@ -1,0 +1,4 @@
+(Parameter.set 'Audio_Command "touch /exchange/output/$SR.txt ; cat $FILE >> /exchange/output/speech.raw")
+(voice_pjwstk_pl_ks_mbrola)
+(tts_file "/festinput.txt" 'fundamental)
+(quit)

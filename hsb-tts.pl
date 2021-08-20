@@ -7,8 +7,8 @@
 use strict;
 use warnings;
 
-# use Number::Convert::Roman;
-use Roman; # this also accepts nonsense so we have to validate them ourselves
+use Number::Convert::Roman;
+# use Roman; # this also accepts nonsense so we have to validate them ourselves
 
 use TeX::Hyphen;
 
@@ -692,10 +692,10 @@ while(<$infile_h>){
     @words = split(/ +/);
     my $single_word;
     
-    for ( my $i = 0; $i <= $#words; $i++) {
-      $single_word = check_hyph_exception($words[$i]);
-      s/$words[$i]/$single_word/; # this is principielly buggy, but we might get away with it ...
-    }
+    #for ( my $i = 0; $i <= $#words; $i++) {
+    #  $single_word = check_hyph_exception($words[$i]);
+    #  s/$words[$i]/$single_word/; # this is principielly buggy, but we might get away with it ...
+    #}
     # end of documented stupidity
 
     
@@ -1009,10 +1009,10 @@ while(<$infile_h>){
 
     # psiemy-slołał-ła je naš cil za Ewu
 
-    s/aw([ao]\b)/ał-ł$1/gi;
-    s/([ou])w([ao]\b)/$1-ł$2/gi;
+    #s/aw([ao]\b)/ał-ł$1/gi;
+    #s/([ou])w([ao]\b)/$1-ł$2/gi;
 
-    s/([ao])wa(.\b)/$1ł-ła$2/gi; # rozeznał-łać
+    #s/([ao])wa(.\b)/$1ł-ła$2/gi; # rozeznał-łać
 
     # RZ ale rz dyrbi so nětko někak škitać
     s/r-z/-rz/gi;
@@ -1111,8 +1111,8 @@ while(<$infile_h>){
     }
 
   
-    @words = split(/ +/);
-    for ( my $i = 0; $i <= $#words; $i++) {
+    #@words = split(/ +/);
+    #for ( my $i = 0; $i <= $#words; $i++) {
 
       # TODO: check whether it is an exeption !!!
       # then it should contain a hyphen or ´#´ as a marker for the accentuated syllable
@@ -1126,13 +1126,13 @@ while(<$infile_h>){
       ## $hyphenated = check_hyph_exception($words[$i]);
       ## $hyphenated =  $hyp->visualize($hyphenated);
       
-      $hyphenated =  $hyp->visualize($words[$i]);
+  #    $hyphenated =  $hyp->visualize($words[$i]);
 
       # this has then to be pruned
-      $hyphenated = optimise_hyphens($hyphenated);
+   #   $hyphenated = optimise_hyphens($hyphenated);
 
-      s/$words[$i]/$hyphenated/; # this is principielly buggy, but we might get away with it ...
-    }
+   #   s/$words[$i]/$hyphenated/; # this is principielly buggy, but we might get away with it ...
+  #  }
 
     print $outfile_h $_;
     
