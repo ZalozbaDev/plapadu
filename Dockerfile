@@ -42,7 +42,9 @@ ENV LANG pl_PL.UTF-8
 
 # to run container:
 ## mkdir -p input && mkdir -p output 
+## place input into "input/text.txt" encoded in UTF-8
 ## docker run --mount type=bind,source="$(pwd)"/input,target=/exchange/input/ --mount type=bind,source="$(pwd)"/output,target=/exchange/output/ -it plapadu_oss /plapadu_hsb.sh
+## find .wav in "output/speech.wav"
 
 # debugging:
 ## docker run --mount type=bind,source="$(pwd)"/input,target=/exchange/input/ --mount type=bind,source="$(pwd)"/output,target=/exchange/output/ -it plapadu_oss /bin/bash
